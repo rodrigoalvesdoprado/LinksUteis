@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.activity.FormularioLinkActivity">
+
+        <ImageView
+            android:id="@+id/activity_formulario_link_logo_imageview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/logo" />
+        <!-- app:srcCompat="@drawable/ic_launcher_foreground" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/activity_formulario_link_nome_do_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/nome_do_link"
+                android:inputType="textCapWords"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/activity_formulario_link_endereco_do_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/http_www_enderecodolink_com"
+                android:inputType="textUri"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_formulario_link_select_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="Selecionar Imagem" />
+
+        <Button
+            android:id="@+id/activity_formulario_link_reset_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="Resetar Imagem" />
+
+        <!--
+        <Button
+            android:id="@+id/activity_formulario_link_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Salvar" />
+        -->
+
+        <!--
+        <Button
+            android:id="@+id/activity_formulario_link_teste_exibe_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Exibe imagem salva"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/activity_formulario_link_salva_imagem_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Salva imagem"
+            android:layout_margin="8dp" />
+        -->
+
+    </LinearLayout>
+</ScrollView>
